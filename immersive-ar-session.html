@@ -36,11 +36,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       <details open>
         <summary>Immersive AR Session</summary>
         <p>
-          This sample demonstrates how to use an 'immersive-ar' XRSession to
-          present a simple WebGL scene to a transparent or passthrough XR
-          device. The logic is largely the same as the corresponding VR sample,
-          with the primary difference being that no background is rendered and
-          the model is scaled down for easier viewing in a real-world space.
+          This sample 
           <a class="back" href="./">Back</a>
         </p>
       </details>
@@ -70,7 +66,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       let gl = null;
       let renderer = null;
       let scene = new Scene();
-      let solarSystem = new GlbNode({url: 'media/gltf/space/space.glb'});
+      let solarSystem = new Gltf2Node({url: 'media/gltf/space/space.gltf'});
       // The solar system is big (citation needed). Scale it down so that users
       // can move around the planets more easily.
       solarSystem.scale = [0.1, 0.1, 0.1];
